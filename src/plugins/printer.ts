@@ -83,4 +83,6 @@ export class Printer {
   @Cordova()
   static print(content: string | HTMLElement, options?: PrintOptions): Promise<any> { return; }
 
+  @Cordova()
+  static pick(uri: string) { return; }
 }

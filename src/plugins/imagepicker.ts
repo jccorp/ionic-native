@@ -47,15 +47,15 @@ export interface ImagePickerOptions {
  */
 @Plugin({
   pluginName: 'ImagePicker',
-  plugin: 'cordova-plugin-image-picker',
+  plugin: 'https://github.com/Telerik-Verified-Plugins/ImagePicker',
   pluginRef: 'window.imagePicker',
-  repo: 'https://github.com/wymsee/cordova-imagePicker'
+  repo: 'https://github.com/Telerik-Verified-Plugins/ImagePicker'
 })
 export class ImagePicker {
   /**
    * Pick pictures from the library.
    * @param {ImagePickerOptions} options
-   * @return Returns a Promise that resolves the image file URI
+   * @returns {Promise<any>} Returns a Promise that resolves the image file URI
    * otherwise rejects with an error.
    */
   @Cordova({
